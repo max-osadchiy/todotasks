@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { func, bool, string } from 'prop-types'
 import DeleteTodo from '../containers/DeleteTodo'
 
 const Todo = ({ onClick, completed, text, todoId }) => (
@@ -15,9 +15,10 @@ const Todo = ({ onClick, completed, text, todoId }) => (
 )
 
 Todo.propTypes = {
-  onClick: PropTypes.func.isRequired,
-  completed: PropTypes.bool.isRequired,
-  text: PropTypes.string.isRequired
+  onClick: func.isRequired,
+  completed: bool.isRequired,
+  text: string.isRequired,
+  todoId: func.isRequired
 }
 
 export default Todo
