@@ -1,6 +1,8 @@
 import React from 'react'
 import { func, bool, string } from 'prop-types'
-import DeleteTodo from '../containers/DeleteTodo'
+import DeleteTodo from '../../containers/DeleteTodo'
+
+import './Todo.scss'
 
 const Todo = ({ onClick, completed, text, todoId }) => (
   <li
