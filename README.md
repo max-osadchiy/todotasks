@@ -4,7 +4,7 @@ Projects built with Create-React-App include support for ES6 syntax, as well as 
 
 ## Available Scripts
 
-In the project directory, you can run: b
+In the project directory, you can run:
 
 ### `npm start`
 
