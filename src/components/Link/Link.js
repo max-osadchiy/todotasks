@@ -1,6 +1,8 @@
 import React from 'react'
 import { bool, node, func } from 'prop-types'
 
+import './Link.scss'
+
 const Link = ({ active, children, onClick }) => (
     <button
        onClick={onClick}
