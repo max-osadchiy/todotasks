@@ -4,7 +4,7 @@ import TodoList from '../components/TodoList/TodoList'
 import { getVisibleTodos } from '../selectors'
 
 const mapStateToProps = state => ({
-  todos: getVisibleTodos(state.todos, state.visibilityFilter)
+  todos: getVisibleTodos(state)
 })
 
 const mapDispatchToProps = dispatch => ({
