@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from './Footer/Footer'
 import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
+import Information from './Information/Information'
 
 import './App.scss'
 
@@ -11,6 +12,7 @@ const App = () => (
     <AddTodo />
     <VisibleTodoList />
     <Footer />
+    <Information/>
   </div>
 )
 
