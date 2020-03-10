@@ -5,12 +5,13 @@ import { connect } from "react-redux"
 import { requestApiData } from "../actions/index"
 
 const InfoMisha = () => {
+    console.log(requestApiData())
     const [hasError, setErrors] = useState(false)
     const [inform, setInform] = useState({})
 
     const fetchData = async (state) => {
         const res = await fetch(requestApiData())
-        // console.log(requestApiData(state))
+        console.log(requestApiData(state))
         res
             .json()
             .then(res => setInform(res))
@@ -19,7 +20,8 @@ const InfoMisha = () => {
 
     useEffect(() => {
         fetchData()
-    })
+        console.log(fetchData)
+    }, [])
 
     return (
         <div>
